@@ -8,8 +8,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2012-7-2 16:49:34.
-		本页面代码由DTcms模板引擎生成于 2012-7-2 16:49:34. 
+		This page was created at 2012-8-9 13:54:54.
+		本页面代码生成于 2012-8-9 13:54:54. 
 	*/
 
 	base.OnInit(e);
@@ -137,7 +137,7 @@ override protected void OnInit(EventArgs e)
 		adr__loop__id++;
 
 
-	templateBuilder.Append("\r\n   <li><span>( ");	templateBuilder.Append(Utils.StrToDateTime(adr["add_time"].ToString().Trim()).ToString("MM-dd"));
+	templateBuilder.Append("\r\n   <li><span>( ");	templateBuilder.Append(Utils.ObjectToDateTime(adr["add_time"].ToString().Trim()).ToString("MM-dd"));
 
 	templateBuilder.Append(" )</span><a href=\"");
 	templateBuilder.Append(linkurl("article_show",adr["id"].ToString().Trim()));

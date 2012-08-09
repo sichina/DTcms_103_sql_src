@@ -8,8 +8,8 @@ override protected void OnInit(EventArgs e)
 {
 
 	/* 
-		This page was created by DTcms Template Engine at 2012/7/14 22:43:57.
-		本页面代码由DTcms模板引擎生成于 2012/7/14 22:43:57. 
+		This page was created at 2012-8-9 13:58:24.
+		本页面代码生成于 2012-8-9 13:58:24. 
 	*/
 
 	base.OnInit(e);
@@ -25,7 +25,8 @@ override protected void OnInit(EventArgs e)
 	templateBuilder.Append("script>\r\n<script type=\"text/javascript\" src=\"");
 	templateBuilder.Append(config.templateskin.ToString());
 	templateBuilder.Append("/js/base.js\"></");
-	templateBuilder.Append("script>\r\n</head>\r\n<body>\r\n<div class=\"container_12\">\r\n <!-- .header -->\r\n ");
+	templateBuilder.Append("script>\r\n</head>\r\n<body>\r\n<script type=\"text/javascript\" src=\"/plugins/lineservice/online_js.ashx\"></");
+	templateBuilder.Append("script>\r\n<div class=\"container_12\">\r\n <!-- .header -->\r\n ");
 
 	templateBuilder.Append(" <div class=\"grid_4\">\r\n   <h1><a href=\"");
 	templateBuilder.Append(config.weburl.ToString());

@@ -146,6 +146,10 @@
     <Content Include="admin\settings\templet_list.aspx" />
     <Content Include="admin\settings\url_rewrite_edit.aspx" />
     <Content Include="admin\settings\url_rewrite_list.aspx" />
+    <Content Include="App_Data\DTcmsdb.mdf" />
+    <Content Include="App_Data\DTcmsdb_log.ldf">
+      <DependentUpon>DTcmsdb.mdf</DependentUpon>
+    </Content>
     <Content Include="css\image1.gif" />
     <Content Include="css\image2.gif" />
     <Content Include="css\meneame.jpg" />
