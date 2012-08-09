@@ -30,7 +30,7 @@ namespace DTcms.Common
             }
             public string ProductName
             {
-                get { return "DTcms"; }
+                get { return "WEBCMS"; }
             }
             public int ProductType
             {
@@ -513,7 +513,7 @@ namespace DTcms.Common
                 return null;
             string sInput1 = sInput.ToLower();
             string output = sInput;
-            string pattern = @"*|and|exec|insert|select|delete|update|count|master|truncate|declare|char(|mid(|chr(|'";
+            string pattern = @"*|and|alert|admin|exec|insert|select|delete|update|count|master|truncate|declare|char(|mid(|chr(|'";
             if (Regex.Match(sInput1, Regex.Escape(pattern), RegexOptions.Compiled | RegexOptions.IgnoreCase).Success)
             {
                 throw new Exception("字符串中含有非法字符!");

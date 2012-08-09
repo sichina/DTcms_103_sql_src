@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>插件管理</title>
+<title>业务模块管理</title>
 <link type="text/css" rel="stylesheet" href="../../scripts/ui/skins/Aqua/css/ligerui-all.css" />
 <link type="text/css" rel="stylesheet" href="../images/style.css" />
 <script type="text/javascript" src="../../scripts/jquery/jquery-1.3.2.min.js"></script>
@@ -13,14 +13,14 @@
 </head>
 <body class="mainbody">
 <form id="form1" runat="server">
-    <div class="navigation">首页 &gt; 控制面板 &gt; 插件管理</div>
+    <div class="navigation">首页 &gt; 控制面板 &gt; 业务模块管理</div>
     <div class="tools_box">
 	    <div class="tools_bar">
 		    <a href="javascript:void(0);" onclick="checkAll(this);" class="tools_btn"><span><b class="all">全选</b></span></a>
-            <asp:LinkButton ID="btnInstall" runat="server" CssClass="tools_btn" OnClientClick="return ExePostBack('btnInstall', '已安装的插件不执行重复安装，确定继续吗？');" 
+            <asp:LinkButton ID="btnInstall" runat="server" CssClass="tools_btn" OnClientClick="return ExePostBack('btnInstall', '已安装的业务模块不执行重复安装，确定继续吗？');" 
                 onclick="btnInstall_Click"><span><b class="import">批量安装</b></span></asp:LinkButton>
                 <asp:LinkButton ID="lbtnRemark" runat="server" CssClass="tools_btn" onclick="lbtnRemark_Click"><span><b class="refresh">生成模板</b></span></asp:LinkButton>
-            <asp:LinkButton ID="btnUninstall" runat="server" CssClass="tools_btn" OnClientClick="return ExePostBack('btnUninstall', '卸载插件不会删除插件目录，确定继续吗？');" 
+            <asp:LinkButton ID="btnUninstall" runat="server" CssClass="tools_btn" OnClientClick="return ExePostBack('btnUninstall', '卸载业务模块不会删除业务模块目录，确定继续吗？');" 
                 onclick="btnUninstall_Click"><span><b class="delete">批量卸载</b></span></asp:LinkButton>
         </div>
     </div>
@@ -30,7 +30,7 @@
     <table width="100%" border="0" cellspacing="0" cellpadding="0" class="msgtable">
       <tr>
         <th width="30">选择</th>
-        <th width="20%" align="left">插件名称</th>
+        <th width="20%" align="left">业务模块名称</th>
         <th width="15%">目录</th>
         <th width="10%">作者</th>
         <th width="10%">版本号</th>

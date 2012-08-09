@@ -19,7 +19,7 @@ namespace DTcms.Common
         /// <returns></returns>
         public static string Encrypt(string Text)
         {
-            return Encrypt(Text, "DTcms");
+            return Encrypt(Text, "sichina");
         }
         /// <summary> 
         /// 加密数据 
@@ -57,7 +57,7 @@ namespace DTcms.Common
         /// <returns></returns>
         public static string Decrypt(string Text)
         {
-            return Decrypt(Text, "DTcms");
+            return Decrypt(Text, "sichina");
         }
         /// <summary> 
         /// 解密数据 
