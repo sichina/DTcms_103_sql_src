@@ -1,0 +1,10 @@
+1、附加DataBase下的DTcmsdb.mdf（MSSQL2005）数据库文件
+   或者您也可以建立数据库，在其基础上运行database.sql生成表及数据（但不包含演示数据）。
+
+2、后台登录地址：http://你的网址/admin/login.aspx
+
+3、默认管理员帐号：admin，密码：admin888
+
+4、将演示数据文件“演示的上传文件.rar”解压到DTcms.Web项目的upload目录下
+
+5、插件源码下载请登录官方技术论坛：http://bbs.dtcms.net

@@ -1,0 +1,5 @@
+1、2012-7-11 20:14 修复了主项目自带的插件审核变删除的提示；
+2、2012-7-15 10:44 修改及增加模板引擎(DTcms.Common.PageTemplate.cs)
+3、2012-7-15 10:44 增加后台频道编辑时检查URL配置名称是否重复(DTcms.Web/admin/settings/sys_channel_edit.aspx)；
+4、2012-7-15 10:44 修改了默认模板下的JS文件(DTcms.Web/templates/default\js/picture.js)
+5、2012-8-3 21:39 增加了内容模块单条信息调用方法(修改DTcms.Web.UI/BasePage.cs文件)
