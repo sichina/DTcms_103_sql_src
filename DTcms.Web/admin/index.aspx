@@ -240,7 +240,7 @@
             </div> 
         </div> 
         <div position="bottom" class="footer">
-            <div class="copyright">Copyright &copy; 2009 - 2012. dtcms.net. All Rights Reserved.</div>
+            <div class="copyright">Copyright &copy; 2009 - 2012. <%=siteConfig.webcompany %>. All Rights Reserved.</div>
         </div>
     </div>
 </form>

@@ -10,7 +10,7 @@
 </head>
 <body class="mainbody">
 <form id="form1" runat="server">
-<div class="navigation nav_icon">你好，<i><%=admin_info.user_name %>(<%=new DTcms.BLL.manager_role().GetTitle(admin_info.role_id) %>)</i>，欢迎进入后台管理中心</div>
+<div class="navigation nav_icon">您好，<i><%=admin_info.user_name %>(<%=new DTcms.BLL.manager_role().GetTitle(admin_info.role_id) %>)</i>，欢迎进入后台管理中心</div>
 <div class="line10"></div>
 <div class="nlist1">
 	<ul>
@@ -52,7 +52,7 @@
         <li><a href="javascript:parent.f_addTab('sys_channel','系统频道设置','settings/sys_channel_list.aspx')"><img src="images/icon_channel.png" /><br />频道设置</a></li>
         <li><a href="javascript:parent.f_addTab('templet_list','系统模板管理','settings/templet_list.aspx')"><img src="images/icon_templet.png" /><br />生成模板</a></li>
         <li><a href="#"><img src="images/icon_mark.png" /><br />生成静态</a></li>
-        <li><a href="javascript:parent.f_addTab('plugin_list','系统业务模块管理','settings/plugin_list.aspx')"><img src="images/icon_plugin.png" /><br />业务模块管理</a></li>
+        <li><a href="javascript:parent.f_addTab('plugin_list','系统业务模块管理','settings/plugin_list.aspx')"><img src="images/icon_plugin.png" /><br />业务模块</a></li>
         <li><a href="#"><img src="images/icon_user.png" /><br />会员管理</a></li>
         <li><a href="javascript:parent.f_addTab('manager_list','管理员管理','manager/manager_list.aspx')"><img src="images/icon_manaer.png" /><br />管理员</a></li>
         <li><a href="javascript:parent.f_addTab('manager_log','系统日志','manager/manager_log.aspx')"><img src="images/icon_log.png" /><br />系统日志</a></li>
@@ -66,7 +66,7 @@
     	<li>2、点击“频道管理”建立系统的频道、分类、扩展属性等信息；</li>
         <li>3、制作好网站模板，上传到站点templates目录下，点击“模板管理”生成模板；</li>
     </ul>
-    <h3 class="msg">官方消息</h3>
+    <h3 class="msg">维护信息</h3>
     <ul>
         <asp:Literal ID="LitNotice" runat="server"/>
     </ul>

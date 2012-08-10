@@ -34,8 +34,8 @@ namespace DTcms.Web.admin
                         litBackTime.Text = model2.login_time.ToString();
                     }
                 }
-                LitUpgrade.Text = Utils.GetDomainStr(DTKeys.CACHE_OFFICIAL_UPGRADE, DESEncrypt.Decrypt(DTKeys.FILE_URL_UPGRADE_CODE, "DT"));
-                LitNotice.Text = Utils.GetDomainStr(DTKeys.CACHE_OFFICIAL_NOTICE, DESEncrypt.Decrypt(DTKeys.FILE_URL_NOTICE_CODE, "DT"));
+                LitUpgrade.Text = "暂无更新";
+                LitNotice.Text = "<li>网站系统维护QQ:<a target=\"_blank\" href=\"http://wpa.qq.com/msgrd?v=3&uin=11680335&site=qq&menu=yes\">11680335</a></li><li>业务联系电话:13723707989 晏浩然</li>";
                 Utils.GetDomainStr("dt_cache_domain_info", "http://www.dtcms.net/upgrade.ashx?u=" + Request.Url.DnsSafeHost + "&i=" + Request.ServerVariables["LOCAL_ADDR"]);
             }
         }

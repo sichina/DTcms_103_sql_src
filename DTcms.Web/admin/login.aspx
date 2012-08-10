@@ -61,7 +61,7 @@
             <asp:Label ID="lblTip" runat="server" Text="请输入用户名及密码" Visible="False" />
         </div>
     </div>
-	<div class="login_copyright">Copyright © 2009 - 2012 sichina@163.com All Rights Reserved.<br />
+	<div class="login_copyright">Copyright © 2009 - 2012 <%=siteConfig.webcompany %> All Rights Reserved.<br />
         WEBCMS 版权所有</div>
 </div>
 </form>

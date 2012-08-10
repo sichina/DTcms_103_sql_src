@@ -9,6 +9,7 @@ namespace DTcms.Web.admin
 {
     public partial class login : System.Web.UI.Page
     {
+        protected Model.siteconfig siteConfig = new BLL.siteconfig().loadConfig(Utils.GetXmlMapPath(DTKeys.FILE_SITE_XML_CONFING));
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
@@ -58,7 +59,7 @@ namespace DTcms.Web.admin
             Session[DTKeys.SESSION_ADMIN_INFO] = model;
             Session.Timeout = 45;
             //写入登录日志
-            Model.siteconfig siteConfig = new BLL.siteconfig().loadConfig(Utils.GetXmlMapPath(DTKeys.FILE_SITE_XML_CONFING));
+            //Model.siteconfig siteConfig = new BLL.siteconfig().loadConfig(Utils.GetXmlMapPath(DTKeys.FILE_SITE_XML_CONFING));
             if (siteConfig.logstatus > 0)
             {
                 Model.manager_log modelLog = new Model.manager_log();
